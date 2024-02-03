@@ -76,6 +76,7 @@ import { RouterModule } from '@angular/router';
                   <td class="flex gap-1 items-center">
                     <a
                       [routerLink]="['/', rowData.employeeId]"
+                      [state]="{ name: 'marcus' }"
                       class="p-ripple p-element p-button p-component p-button-link p-button-sm"
                       >View</a
                     >
