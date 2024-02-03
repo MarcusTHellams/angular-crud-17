@@ -20,6 +20,7 @@ import {
 } from '@tanstack/angular-query-experimental';
 import { EmployeeFormComponent } from './employee-form.component';
 import { RerenderDirective } from '../../common/directives/rerender.directive';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'employee',
@@ -32,6 +33,7 @@ import { RerenderDirective } from '../../common/directives/rerender.directive';
     EmployeeFormComponent,
     ToastModule,
     RerenderDirective,
+    RouterModule,
   ],
   providers: [EmployeesService, MessageService],
   template: `
@@ -71,7 +73,12 @@ import { RerenderDirective } from '../../common/directives/rerender.directive';
                 @if (!last) {
                   <td>{{ rowData[column.toLowerCase()] }}</td>
                 } @else {
-                  <td class="flex gap-1">
+                  <td class="flex gap-1 items-center">
+                    <a
+                      [routerLink]="['/', rowData.employeeId]"
+                      class="p-ripple p-element p-button p-component p-button-link p-button-sm"
+                      >View</a
+                    >
                     <p-button
                       (click)="loadEmployee(rowData)"
                       [text]="true"
