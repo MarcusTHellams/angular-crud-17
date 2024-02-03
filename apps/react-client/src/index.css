@@ -1,0 +1,19 @@
+/* Order */
+@layer reset, primereact;
+
+@tailwind components;
+@tailwind utilities;
+
+/* Reset CSS */
+@layer reset {
+  button,
+  input {
+    /* CSS to Reset */
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
