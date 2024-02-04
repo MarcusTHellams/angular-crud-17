@@ -67,7 +67,6 @@
 </template>
 
 <script setup lang="ts">
-import type { Employee } from '@/common/employeeType';
 import { useMutation } from '@tanstack/vue-query';
 import { format } from 'date-fns';
 import Button from 'primevue/button';
@@ -75,7 +74,7 @@ import Calendar from 'primevue/calendar';
 import InputText from 'primevue/inputtext';
 import { useForm } from 'vee-validate';
 import { date, object, string } from 'yup';
-import { createEmployee, updateEmployee } from '@/features/employees/employee.service';
+import { createEmployee, updateEmployee, type Employee } from 'crud-utils';
 import { useToast } from 'primevue/usetoast';
 
 const toast = useToast();

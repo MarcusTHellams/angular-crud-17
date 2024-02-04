@@ -3,7 +3,7 @@ import { Button } from 'primereact/button';
 import { useForm, Controller } from 'react-hook-form';
 import { object, string, InferType } from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { Employee } from '../../common/employee.type';
+import { type Employee } from 'crud-utils';
 import { format } from 'date-fns';
 
 import { Calendar } from 'primereact/calendar';
@@ -11,7 +11,7 @@ import { Nullable } from 'primereact/ts-helpers';
 import { MutableRefObject } from 'react';
 import { Toast } from 'primereact/toast';
 import { useMutation } from '@tanstack/react-query';
-import { createEmployee, updateEmployee } from './employee.service';
+import { createEmployee, updateEmployee } from 'crud-utils';
 
 const dateRegex = /^\d{2}-\d{2}-\d{4}$/;
 

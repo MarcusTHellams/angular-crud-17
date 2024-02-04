@@ -63,11 +63,8 @@ import Button from 'primevue/button';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/vue-query';
-import {
-  getAllEmployees,
-  deleteEmployee as _deleteEmployee,
-} from '@/features/employees/employee.service';
-import { type Employee } from '@/common/employeeType';
+import { getAllEmployees, deleteEmployee as _deleteEmployee } from 'crud-utils';
+import { type Employee } from 'crud-utils';
 import EmployeeForm from '@/features/employees/EmployeeForm.vue';
 import { RouterLink } from 'vue-router';
 import { ref } from 'vue';

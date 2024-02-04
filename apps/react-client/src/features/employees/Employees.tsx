@@ -4,8 +4,7 @@ import { Button } from 'primereact/button';
 import { Column, ColumnBodyOptions } from 'primereact/column';
 import { DataTable } from 'primereact/datatable';
 import { MutableRefObject, useCallback, useRef, useState } from 'react';
-import { Employee } from '../../common/employee.type';
-import { getAllEmployees, deleteEmployee } from './employee.service';
+import { getAllEmployees, deleteEmployee, type Employee } from 'crud-utils';
 import { Toast } from 'primereact/toast';
 
 import { Dialog } from 'primereact/dialog';

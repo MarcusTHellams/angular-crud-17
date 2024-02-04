@@ -15,6 +15,7 @@
   "dependencies": {
     "@tanstack/vue-query": "^5.18.1",
     "axios": "^1.6.7",
+    "crud-utils": "workspace:*",
     "date-fns": "^3.3.1",
     "primevue": "^3.47.2",
     "vee-validate": "^4.12.5",

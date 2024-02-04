@@ -38,7 +38,7 @@
 <script setup lang="ts">
 import { useQuery } from '@tanstack/vue-query';
 import { useRoute, RouterLink } from 'vue-router';
-import { getEmployee } from './employee.service';
+import { getEmployee } from 'crud-utils';
 
 import Card from 'primevue/card';
 

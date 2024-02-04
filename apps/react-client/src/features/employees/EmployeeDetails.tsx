@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
-import { getEmployee } from './employee.service';
+import { getEmployee } from 'crud-utils';
 import { Card } from 'primereact/card';
 
 export const EmployeeDetails = () => {
