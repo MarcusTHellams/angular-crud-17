@@ -162,6 +162,7 @@ export const Employees = () => {
         )}
       </div>
       <Dialog
+        blockScroll
         header="Employee Details"
         closeOnEscape={false}
         modal
